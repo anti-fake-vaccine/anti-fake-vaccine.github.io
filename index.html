@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/vaccine64.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/vaccine64.png' %}">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bulma.min.css"/>
     <link rel="stylesheet" href="css/base.css" />
@@ -11,7 +13,7 @@
     <head>
         <nav class="navbar is-dark">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
+                <a class="navbar-item" href="/">
                 <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
                 </a>
                 <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
@@ -22,27 +24,39 @@
             </div>
             <div id="navbarExampleTransparentExample" class="navbar-menu">
                 <div class="navbar-start">
-                    <a class="navbar-item" href="">
+                    <a class="navbar-item" href="#open-letter">
                     公开信
                     </a>
-                    <a class="navbar-item" href="">
+                    <a class="navbar-item" href="#feeling">
                     受害者感受
                     </a>
-                    <a class="navbar-item" href="">
+                    <a class="navbar-item" href="#resources">
                     相关报道
                     </a>
-                    <a class="navbar-item" href="">
+                    <a class="navbar-item" href="#true-false">
                     如何分辨真假疫苗
                     </a>
-                    <a class="navbar-item" href="">
+                    <a class="navbar-item" href="#questions">
                     常见问题
                     </a>
                 </div>
             </div>
         </nav>
     </head>
+    <section class="hero is-medium is-warning is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                为了现在和未来的母亲
+                </h1>
+                <h2 class="subtitle">
+                For the present and future mothers
+                </h2>
+            </div>
+        </div>
+    </section>
     <div class="container">
-        <div class="open-letter">
+        <div id="open-letter" class="open-letter">
             <hr>
             <h3 class="title is-3 has-text-centered">致香港衛生署的公開信</h3>
 
@@ -64,31 +78,15 @@
 
             “2016 年全歐只有 5200 例麻疹病例，這一數字在 2017 年激增至 2 萬多例，2018 年已經高達 8.3 萬，貢獻了 5.4 萬例的烏克蘭成為重災區，這與 2008 年該國一名少年在接種麻疹疫苗後死亡有關。雖然他的死亡並非疫苗所致，但還是引發了該國民眾對疫苗的恐慌，一歲兒童麻疹疫苗接種率從 2007 年的 97% 暴跌至 2010 年的 56%，不過這其中也有烏克蘭政局動蕩和醫療設施不足的原因。”
 
-            這些受害者是現在別人的孩子，將來也是他人的父母，我們不希望她們因為這個痛苦的記憶而拒絕她們的小孩接種疫苗，我們更擔心如不徹底查明此事，此後受害者無論因為何事而死亡都會引起公眾恐慌，從而引發大眾的疫苗恐慌。</p>
+            這些受害者是現在別人的孩子，將來也是他人的父母，此网站发布的今天刚好是母亲节。我們不希望他们因為這個痛苦的記憶而拒絕他们的小孩接種疫苗，我們更擔心如不徹底查明此事，此後受害者無論因為何事而死亡都會引起公眾恐慌，從而引發大眾的疫苗恐慌。</p>
 
             <br>
             <h6 class="title is-6">改善兩地社會關係</h6>
-            <p>與受害者沉重心情相對應的是部分香港人的冷漠以及無情，相關的評論可以輕易地在香港01的facebook頁面中找到，大部分留言者一面倒地指責內地人因為佔用資源而自討苦吃，根本沒有人關心受害者的性命安危。我很難想像，在一個高度發展的社會，仍然有那麼多人會因為其他人接種了假疫苗而幸災樂禍，我們說著相近的語言，長着相似的面孔，卻依然因為地域而不能相容，我不會愚蠢地認為這些惡意的評論者能代表所有香港人，不過他們確實代表了部分民意。一種漠視他人生命附帶的莫名其妙的優越感。我們的國家已經布滿傷痕了，應該停止割裂以及互相傷害。我們希望衛生署能夠正確地處理這件事，減少內地以及香港兩地人的偏見以及摩擦。</p>
+            <p>與受害者沉重心情相對應的是部分香港人的冷漠以及無情，相關的評論可以輕易地在香港 01 的 Facebook 頁面中找到，大部分留言者一面倒地指責內地人因為佔用資源而自討苦吃，根本沒有人關心受害者的性命安危。我很難想像，在一個高度發展的社會，仍然有那麼多人會因為其他人接種了假疫苗而幸災樂禍，我們說著相近的語言，長着相似的面孔，卻依然因為地域而不能相容，我不會愚蠢地認為這些惡意的評論者能代表所有香港人，不過他們確實代表了部分民意。一種漠視他人生命附帶的莫名其妙的優越感。我們的國家已經布滿傷痕了，應該停止割裂以及互相傷害。我們希望衛生署能夠正確地處理這件事，減少內地以及香港兩地人的偏見以及摩擦。</p>
             <hr>    
         </div> <!-- end open-letter -->
-        <div class="feeling"> 
+        <div id="feeling" class="feeling"> 
             <h3 class="title is-3 has-text-centered">受害者的话</h3>
-            <article class="media">
-                <figure class="media-left">
-                    <p class="image is-64x64">
-                    <img src="https://bulma.io/images/placeholders/128x128.png">
-                    </p>
-                </figure>
-                <div class="media-content">
-                    <div class="content">
-                        <p>
-                            <strong>蓝小姐</strong>
-                            <br>
-                            “首先我是很气愤的，从事件爆发到现在，寰亚并未对我们之前打的针作出任何正面回应，之前打的是什么针，什么成分，去香港打针是出于对香港医疗体系的信任，但是现在我们花了高价的钱打的确是走私针，还不能确定对身体会否造成什么影响。”
-                        </p>
-                    </div>
-                </div> <!-- end media-content -->
-            </article>
             <article class="media">
                 <figure class="media-left">
                     <p class="image is-64x64">
@@ -107,7 +105,7 @@
             </article>
         </div> <!-- end feeling -->
         <hr>
-        <div class="resource"> 
+        <div id="resources" class="resource"> 
             <h3 class="title is-3 has-text-centered">相关报道</h3>
             <a href="https://www.hk01.com/%E7%A4%BE%E6%9C%83%E6%96%B0%E8%81%9E/325654/%E5%AD%90%E5%AE%AE%E9%A0%B8%E7%99%8C%E7%96%AB%E8%8B%97-%E6%B0%B4%E8%B2%A8hpv%E9%87%9D%E7%96%91%E6%B9%A7%E6%B8%AF-%E4%BA%8B%E4%B8%BB-%E7%84%A1%E5%86%B7%E8%97%8F-%E7%84%A1%E9%98%B2%E5%81%BD%E6%A8%99%E8%AA%8C">【子宮頸癌疫苗】水貨HPV針疑湧港　事主：無冷藏、無防偽標誌</a>
             <br>
@@ -116,7 +114,7 @@
             <a href="https://www.scmp.com/news/hong-kong/health-environment/article/3009795/hong-kong-health-authorities-probe-least-one">Hong Kong health authorities probe at least one private clinic over fears of smuggled Gardasil 9 HPV vaccines</a>
         </div> <!-- end resource -->
         <hr>
-        <div class="true-false"> 
+        <div id="true-false" class="true-false"> 
             <h3 class="title is-3 has-text-centered">如何分辨真假疫苗</h3>
             <ul>
                 <li><b>1. 如果护士或者医生拒绝展示外包装并且拒绝让你保留，请马上要求退款，不要进行接种。</b></li>
@@ -126,13 +124,37 @@
             </ul>
         </div> <!-- end true-false -->
         <hr>
-        <div class="common-sence"> 
+        <div id="questions" class="common-sence"> 
             <h3 class="title is-3 has-text-centered">常见问题</h3>
             <h4 class="title is-4">关于 HPV 疫苗的常见问题请先仔细阅读由香港卫生署发布的指引，这份指引非常详细，可以<a href="pdf/everything.pdf">点击这里查看</a></h4>
             <br>
             <h3 class="title is-3 has-text-centered">常见问题补充</h3>
             <b>1. 我注射了 HPV 疫苗，我不知道它是否起效，我能够在正规机构检测 HPV 抗体吗？</b>
-            <p>理论上可以，基本上，<b>所有疫苗注射后都能够检测出抗体</b>，因为疫苗在推出前必须经过长久而复杂的测试，研究人员也必须要能够证明此疫苗起效，但是为什么我们却很少听到有人去在注射疫苗后检查抗体？首先，因为大家懒，就像大部分人即使知道每年定期体检对自己身体有益也会选择不去一样。大家懒得注射疫苗后又去检查抗体。第二是因为公共卫生机构并没有推动大家去检查，疫苗注射通常是大规模发生的，公共卫生机构只需要保证大部分人的疫苗有效即可，个人的抗体是否有效对整体社会并没有太大影响，所以医院诊所也很少推出检测抗体这类的项目，因为没什么人会去做。但是我不排除会有机构专门提供此类服务，现阶段，检测机构一般通过检测血液对 HPV16 病毒的反应来判断抗体是否存在，要注意的是，这个检测与常规的 HPV 病毒测试并不一样，你现在没有感染到 HPV 病毒并不代表抗体起效。（来源：<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1660559/pdf/1750-9378-1-6.pdf">Serum antibody response to Human papillomavirus (HPV)</a>）</p>
+            <p>理论上可以，基本上，<b>所有疫苗注射后都能够检测出抗体</b>，因为疫苗在推出前必须经过长久而复杂的测试，研究人员也必须要能够证明此疫苗起效，但是为什么我们却很少听到有人去在注射疫苗后检查抗体？首先，因为大家懒，就像大部分人即使知道每年定期体检对自己身体有益也会选择不去一样。大家懒得注射疫苗后又去检查抗体。第二是因为公共卫生机构并没有推动大家去检查，疫苗注射通常是大规模发生的，公共卫生机构只需要保证大部分人的疫苗有效即可，个人的抗体是否有效对整体社会并没有太大影响，所以医院诊所也很少推出检测抗体这类的项目，因为没什么人会去做。但是我不排除会有机构专门提供此类服务，现阶段，检测机构一般通过检测血液对 HPV16 病毒的反应来判断抗体是否存在，要注意的是，这个检测与常规的 HPV 病毒测试并不一样，你现在没有感染到 HPV 病毒并不代表你体内已经有抗体。（来源：<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1660559/pdf/1750-9378-1-6.pdf">Serum antibody response to Human papillomavirus (HPV)</a>）</p>
             <hr>
             <b>2. 疑似被注射了假疫苗的我应该怎么做</b>
-            <p>第一，不要轻信谣言，不要轻信微博小红书的网红甚至医生的话。没错，即使是医生的话你也要请他提供参考来源来证明，因为医生也会犯错，以讹传讹更容易造成恐慌。第二，关注自己的身体变化，是否有异常，不舒服请及时就医，并保留证据。但请勿病急乱投医，不要相信中介或者其他非权威机构的检测项目。</p>
+            <p>第一，不要轻信谣言，不要轻信微博小红书的网红甚至医生的话。没错，即使是医生的话你也要请他提供参考来源来证明，因为医生也会犯错，以讹传讹更容易造成恐慌。第二，关注自己的身体变化，是否有异常，不舒服请及时就医，并保留证据。但请勿病急乱投医，不要相信中介或者其他非权威机构的检测项目。第三，尽可能回忆注射疫苗时的细节，保留当初的交易凭证以及细节。</p>
+        </div> <!-- end common sence -->
+    </div> <!-- end container -->
+    <hr>
+    <section class="hero is-medium is-warning is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                如果你有什么提议，请 email 到 wiwindson@outlook.com
+                </h1>
+                <h2 class="subtitle">
+                Please email to wiwindson@outlook.com if you have any ideas.
+                </h2>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+            <strong>这个网站由</strong> <a href="www.enginego.org">Windson Yang</a> 创建并且维护. 源代码发布在<a href="https://github.com/anti-fake-vaccine/anti-fake-vaccine.github.io">这里</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
